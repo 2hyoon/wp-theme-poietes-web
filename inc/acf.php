@@ -21,5 +21,3 @@
       'parent_slug'	=> 'theme-general-settings',
     ));
   }
-
-?>

@@ -8,5 +8,3 @@ if (!function_exists('poietes_register_scripts')) {
 }
 
 add_action('wp_enqueue_scripts', 'poietes_register_scripts');
-
-?>
