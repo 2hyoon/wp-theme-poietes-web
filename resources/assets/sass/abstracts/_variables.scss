@@ -1,0 +1,92 @@
+// color
+$color-black: hsla(0, 0%, 0%, 1);
+$color-white: hsla(0, 0%, 100%, 1);
+$color-offwhite: hsla(0, 0%, 93%, 1);
+$color-grey-1: #232425;
+$color-grey-2: #aeb0b1;
+$color-grey-3: #64747c;
+$color-grey-4: #676f72;
+$color-red-1: hsla(9, 71%, 53%, 1);
+$color-error: hsla(354, 70%, 54%, 1);
+$color-green-1: hsla(167, 100%, 37%, 0.9);
+
+$color-linear-1: linear-gradient(
+  90deg,
+  hsla(21, 83%, 67%, 0.9) 20%,
+  hsla(167, 100%, 37%, 0.9) 90%
+);
+$color-linear-2: linear-gradient(
+  90deg,
+  hsl(39, 93%, 49%) 20%,
+  hsl(171, 100%, 36%) 90%
+);
+
+// font family
+$font-family-serif: 'Playfair+Display', Georgia, serif;
+$font-family-sans-serif: 'Roboto Condensed', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// font size
+$font-size-sm: rem(12px);
+$font-size-md: rem(20px);
+$font-size-lg: rem(30px);
+$font-size-xl: rem(60px);
+$font-size-base: 1rem !default;
+
+// font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-normal !default;
+
+// line-height
+$line-height-sm: 1.2 !default;
+$line-height-md: 1.4 !default;
+$line-height-lg: 2 !default;
+$line-height-base: $line-height-md !default;
+
+// spacing
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+// layout
+$container-max-widths: (
+  xs: 94%,
+  sm: 94%,
+  md: 94%,
+  lg: 94%,
+  xl: 94%
+) !default;
+
+// grid
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// transition
+$transition-base: all 0.25s ease-in-out;
+
+// z-index
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;

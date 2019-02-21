@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card__img {
+  filter: grayscale(100%);
+  transition: $transition-base;
+  display: block;
+  position: relative;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card__img:hover .card__title {
+  background: linear-gradient(
+    90deg,
+    rgba(241, 150, 100, 1) 20%,
+    rgba(0, 190, 150, 1) 90%
+  );
+}
+
+.card__title {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: hsla(100, 100%, 100%, 100%);
+  padding: 0 0.5rem;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "web.poietes",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "webpack --env.NODE_ENV=development --progress --hide-modules --config build/webpack.config.js",
+    "prod": "npm run production",
+    "production": "webpack --env.NODE_ENV=production --progress --hide-modules --config build/webpack.config.js",
+    "watch": "npm run development -- --watch --colors"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "Poietes",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "autoprefixer": "^9.4.3",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sanitize.css": "^8.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.1.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

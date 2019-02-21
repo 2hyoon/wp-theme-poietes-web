@@ -1,0 +1,8 @@
+body {
+  background-color: $color-offwhite;
+}
+
+body.disabled {
+  position: absolute;
+  overflow: hidden;
+}

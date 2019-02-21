@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // font-size: 62.5%; // == font-size: 10px
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+object,
+embed,
+table,
+iframe {
+  max-width: 100%;
+  height: auto;
+}

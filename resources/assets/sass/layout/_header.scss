@@ -1,0 +1,83 @@
+.header {
+  position: relative;
+  height: rem(50px);
+}
+
+.header__nav {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background-color: $color-grey-1;
+  z-index: $zindex-sticky;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.header__logo {
+  color: $color-white;
+  text-decoration: none;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-md;
+  font-family: $font-family-sans-serif;
+  display: inline-block;
+}
+
+.header__knob {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background: linear-gradient(
+    90deg,
+    hsla(21, 83%, 67%, 0.9) 30%,
+    hsla(167, 100%, 37%, 0.9) 90%
+  );
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+
+  &:hover {
+    border-radius: 2px;
+  }
+}
+
+.header__knob.opened {
+  transform: rotate(90deg);
+}
+
+.header__about {
+  background-color: hsl(20, 80%, 70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: $zindex-dropdown;
+  transition: all 0.4s ease-out;
+}
+
+.header__about.disabled {
+  top: -100%;
+}
+
+.header__about .container,
+.header__about .row {
+  height: inherit;
+}
+
+.header__about-txt {
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  p {
+    line-height: $line-height-lg;
+  }
+}

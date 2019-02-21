@@ -1,0 +1,13 @@
+.footer {
+  background-color: $color-grey-4;
+  padding: 2rem 0;
+
+  &__copyright {
+    color: $color-offwhite;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-light;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+  }
+}

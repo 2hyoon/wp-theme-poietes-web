@@ -1,0 +1,45 @@
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+.container-fluid {
+  @include make-container();
+}
+
+.row {
+  @include make-row();
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@include make-grid-columns();
+
+.col-card {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+  }
+}
+
+.col-po {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+  }
+}
