@@ -58,6 +58,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   overflow-y: scroll;
   z-index: $zindex-dropdown;
   transition: all 0.4s ease-out;
@@ -79,5 +80,15 @@
 
   p {
     line-height: $line-height-lg;
+    font-weight: $font-weight-normal;
+  }
+
+  a {
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      background-color: hsla(167, 100%, 37%, 0.6);
+      text-decoration: none;
+    }
   }
 }
