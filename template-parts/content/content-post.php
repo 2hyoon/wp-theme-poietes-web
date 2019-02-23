@@ -1,13 +1,13 @@
-<!-- <div class="po-featured" 
-    style="background-image:url('<?php //the_post_thumbnail_url('hard-xxlg'); ?>');">
-</div> -->
-<div class="po-featured">
-  <?php 
-    $id = get_post_thumbnail_id();
-    $rst = wp_get_attachment_image($id, 'h-xlg'); 
-    echo $rst;
-  ?>
+<div class="po-featured" 
+    style="background-image:url('<?php the_post_thumbnail_url('h-xlg'); ?>');">
 </div>
+<!-- <div class="po-featured">
+  <?php 
+    // $id = get_post_thumbnail_id();
+    // $rst = wp_get_attachment_image($id, 'h-xlg'); 
+    // echo $rst;
+  ?>
+</div> -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('portfolio'); ?>>
   <div class="po-header" 
