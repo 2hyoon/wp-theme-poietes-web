@@ -53,7 +53,12 @@
 }
 
 .header__about {
-  background-color: hsl(20, 80%, 70%);
+  background: linear-gradient(
+    180deg,
+    hsla(21, 83%, 67%, 0.7) 20%,
+    hsla(167, 100%, 37%, 0.7) 100%
+  );
+  background-color: $color-grey-4;
   position: fixed;
   top: 0;
   left: 0;
@@ -87,7 +92,8 @@
     transition: all 0.2s ease-out;
 
     &:hover {
-      background-color: hsla(167, 100%, 37%, 0.6);
+      color: $color-offwhite;
+      background-color: $color-grey-1;
       text-decoration: none;
     }
   }
