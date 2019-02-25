@@ -62,7 +62,7 @@
             <div class="h-3"></div>
             <div class="row justify-content-center">
               <div class="col-md-6">
-                <?php echo wp_get_attachment_image(get_sub_field('image'), "large" ); ?>
+                <?php echo wp_get_attachment_image(get_sub_field('image'), "medium" ); ?>
               </div>
             </div>
             <div class="h-3"></div>
@@ -78,7 +78,7 @@
                 if(have_rows('images')):
                   while(have_rows('images')): the_row(); ?>
                     <div class="col-md-6">
-                      <?php echo wp_get_attachment_image(get_sub_field('image'), "h-md" ); ?>
+                      <?php echo wp_get_attachment_image(get_sub_field('image'), "medium" ); ?>
                     </div>
               <?php
                   endwhile;
