@@ -67,6 +67,7 @@
   overflow-y: scroll;
   z-index: $zindex-dropdown;
   transition: all 0.4s ease-out;
+  letter-spacing: 0.5px;
 }
 
 .header__about.disabled {

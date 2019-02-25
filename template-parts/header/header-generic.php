@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header__nav">
     <div class="container header__container">
-      <a href="<?php echo esc_attr(get_site_url()); ?>" title="<?php echo esc_attr('Back to homepage', 'poietes'); ?>" class="header__logo">Web.Poietes</a>
+      <a href="<?php echo esc_attr(get_site_url()); ?>" title="<?php echo esc_attr('Back to homepage', 'poietes'); ?>" class="header__logo">Web.POIETES</a>
       <div class="header__knob"></div>
     </div>
   </div>
