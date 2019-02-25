@@ -1,13 +1,6 @@
 <div class="po-featured" 
     style="background-image:url('<?php the_post_thumbnail_url('h-xlg'); ?>');">
 </div>
-<!-- <div class="po-featured">
-  <?php 
-    // $id = get_post_thumbnail_id();
-    // $rst = wp_get_attachment_image($id, 'h-xlg'); 
-    // echo $rst;
-  ?>
-</div> -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('portfolio'); ?>>
   <div class="po-header" 
@@ -27,6 +20,10 @@
           <?php if(!empty(get_field('clients'))): ?>
             <h6>CLIENTS</h6>
             <p class="po-meta"><?php the_field('clients'); ?></p>
+          <?php endif; ?>
+          <?php if(!empty(get_field('role'))): ?>
+            <h6>ROLE</h6>
+            <p class="po-meta"><?php the_field('role'); ?></p>
           <?php endif; ?>
           <?php if(!empty(get_field('skills'))): ?>
             <h6>SKILLS</h6>

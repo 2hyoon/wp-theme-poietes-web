@@ -76,6 +76,25 @@
             "new_lines": "br"
         },
         {
+            "key": "field_5c743b7809ef6",
+            "label": "Role",
+            "name": "role",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
             "key": "field_5c26870b9e811",
             "label": "Skills",
             "name": "skills",
@@ -396,5 +415,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1550561349
+    "modified": 1551121284
 }
