@@ -24,11 +24,32 @@
 
 .header__logo {
   color: $color-white;
+  background: hsla(21, 83%, 67%, 0.6);
+  background: linear-gradient(
+    90deg,
+    hsla(21, 83%, 67%, 0.6) 20%,
+    hsla(167, 100%, 37%, 0.6) 90%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   font-weight: $font-weight-normal;
   font-size: $font-size-md;
   font-family: $font-family-sans-serif;
   display: inline-block;
+  transition: all 0.1s ease-out;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    background: hsla(21, 83%, 67%, 0.6);
+    background: linear-gradient(
+      90deg,
+      hsla(21, 83%, 67%, 0.7) 20%,
+      hsla(167, 100%, 37%, 0.7) 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .header__knob {
