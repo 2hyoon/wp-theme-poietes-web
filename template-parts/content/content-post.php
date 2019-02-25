@@ -29,6 +29,10 @@
             <h6>SKILLS</h6>
             <p class="po-meta"><?php the_field('skills'); ?></p>
           <?php endif; ?>
+          <?php if(!empty(get_field('year'))): ?>
+            <h6>YEAR</h6>
+            <p class="po-meta"><?php the_field('year'); ?></p>
+          <?php endif; ?>
         </div>
       </div>
     </div>
