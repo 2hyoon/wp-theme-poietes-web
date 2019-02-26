@@ -16,23 +16,37 @@
 .po-header {
   position: relative;
   padding: 1.5rem 0;
-}
 
-.po-header h6 {
-  margin: 0;
-  color: inherit;
-}
+  h6 {
+    margin: 0;
+    color: inherit;
+  }
 
-.po-header p {
-  color: inherit;
-}
+  p {
+    color: inherit;
+  }
 
-.po-header a {
-  transition: all 0.2s ease-out;
-  text-decoration: underline;
+  a {
+    transition: all 0.2s ease-out;
+    text-decoration: underline;
 
-  &:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  ul {
+    font-weight: $font-weight-light;
+    line-height: $line-height-sm;
+    padding: 1rem 0 0 1rem;
+
+    li {
+      padding-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      padding-bottom: 0;
+    }
   }
 }
 
