@@ -4,7 +4,7 @@ if (!function_exists('poietes_register_image_size')) {
     function poietes_register_image_size()
     {
         // 3:2 ratio, hard crop
-        // add_image_size('h-sm', 600, 400, true);
+        add_image_size('h-sm', 720, 480, true);
         add_image_size('h-md', 1050, 700, true);
         add_image_size('h-lg', 1800, 1200, true);
         add_image_size('h-xlg', 2400, 1600, true);
